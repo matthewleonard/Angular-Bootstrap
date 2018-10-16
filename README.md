@@ -1,4 +1,4 @@
-# Angular-Bootstrap
+# Angular-Bootstrap-Example
 
 This is an example project created to show you how you can get started with AngularCli development. I used this
 technology to quickly spin up my first version of my blog.
