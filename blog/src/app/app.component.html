@@ -1,53 +1,65 @@
-<div class="container">
+<div class="container-fluid noPadding hiddenOverflow">
   <div class="row">
     <div class="col-12">
-      <div class="jumbotron"  align="center">
-        <h1>Hello World!</h1>
-      </div>
-    </div>
-    <div class="col-12 col-md-9">
       <div class="row">
         <div class="col-12">
-          <h2>Hello World!</h2>
-          <h5>My first blog post, <b>Oct. 15, 2018</b> </h5>
-          <p>Hi. Hey. How's it going?</p>
-          <p>My name is Matthew Leonard and I am a software engineer. I've spent the last 6 years
-            working as a professional doing full stack development for a variety of different applications. I'm starting
-            this blog to share my experiences and journey as a software engineer.</p>
+          <ngb-carousel>
+            <ng-template ngbSlide *ngFor="let image of images">
+              <img class="card-img-top bannerHeight"[src]="image.url" alt="Random first slide">
+              <div class="carousel-caption">
+                <h3>{{image.title}}</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-9">
+          <div class="row">
+            <div class="col-12">
+              <h2>Hello World!</h2>
+              <h5>My first blog post, <b>Oct. 15, 2018</b> </h5>
+              <p>Hi. Hey. How's it going?</p>
+              <p>My name is Matthew Leonard and I am a software engineer. I've spent the last 6 years
+                working as a professional doing full stack development for a variety of different applications. I'm starting
+                this blog to share my experiences and journey as a software engineer.</p>
 
-          <p>The development of this blog is going to start off simple and as I add pieces, I will be posting about them
-            with how I implemented solutions, struggles I had to overcome, and provide code. I will also be posting other
-            content about new technologies and how to implement them. My goal is to research new technology, implement it,
-            and share it with you guys, my (future) readers.</p>
+              <p>The development of this blog is going to start off simple and as I add pieces, I will be posting about them
+                with how I implemented solutions, struggles I had to overcome, and provide code. I will also be posting other
+                content about new technologies and how to implement them. My goal is to research new technology, implement it,
+                and share it with you guys, my (future) readers.</p>
 
-          <p>That's all for now. I will be posting again soon with instructions on how I developed and deployed the very
-            page that you are looking at. Thanks for stopping by and sharing the start of my journey with me!  </p>
+              <p>That's all for now. I will be posting again soon with instructions on how I developed and deployed the very
+                page that you are looking at. Thanks for stopping by and sharing the start of my journey with me!  </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="row">
+            <div class="col-12">
+              <h2>About Me</h2>
+              <p>
+                <img src="assets/img/headshot.JPG" width="200" height="200">
+              </p>
+              <p>Hi. I'm Matthew Leonard, a software engineer specialized in full stack web development for
+                business solutions.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h2>Follow Me</h2>
+              <ul>
+                <li><a href="https://github.com/matthewleonard">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/matthew-leonard-59891832/">LinkedIn</a></li>
+                <li><a href="https://twitter.com/MattLeonardDev">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <div class="row">
-        <div class="col-12">
-          <h2>About Me</h2>
-          <p>
-            <img src="assets/img/headshot.JPG" width="200" height="200">
-          </p>
-          <p>Hi. I'm Matthew Leonard, a software engineer specialized in full stack web development for
-            business solutions.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <h2>Follow Me</h2>
-          <ul>
-            <li><a href="https://github.com/matthewleonard">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/matthew-leonard-59891832/">LinkedIn</a></li>
-            <li><a href="https://twitter.com/MattLeonardDev">Twitter</a></li>
-          </ul>
-        </div>
-      </div>
+      <footer><div align="center">Contact: <a href="mailto:matthew.leonard89@gmail.com">Matthew Leonard</a></div></footer>
     </div>
   </div>
-  <footer><div align="center">Contact: <a href="mailto:matthew.leonard89@gmail.com">Matthew Leonard</a></div></footer>
 </div>
 

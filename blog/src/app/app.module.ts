@@ -8,8 +8,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AppComponent
   ],
   imports: [
-    BrowserModule,
     NgbModule,
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
