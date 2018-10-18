@@ -2,6 +2,14 @@
 @import '~bootstrap/scss/bootstrap-reboot.scss';
 @import '~bootstrap/scss/bootstrap-grid.scss';
 /* You can add global styles to this file, and also import other style files */
+body {
+  overflow-y:hidden;
+  background-color:black;
+}
+
+.bannerText {
+  display: inline-block;
+}
 .paddingLeft {padding-left:50px; }
 .noPadding {
   padding: 0 !important;
@@ -10,18 +18,26 @@
 .hiddenOverflow{
   overflow: hidden;
 }
-.bannerHeight{
-  max-height: 300px;
+.bannerContainer{
+  height: 50vh;
+  text-align: center;
+}
+.bannerTitle{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 .carousel-item {
   /* Force to always be block */
   display: block !important;
   z-index: 1;
   position: absolute;
-  transform: rotate(350deg);
   opacity: 0;
-  transition:all  2s;
   visibility: hidden;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
 }
 
 .carousel-item.active {

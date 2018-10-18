@@ -25,7 +25,8 @@ export class AppComponent {
 
 
 var IMAGES: Image[] = [
-  { "title": "We are covered", "url": "../assets/img/quality/getting-started-with-javascript.png" },
-  { "title": "We got this", "url": "../assets/img/quality/keyboard-on-desk.jpeg" },
-  { "title": "I did this", "url": "../assets/img/quality/web-design-and-development.jpg" }
+  { "title": "We are covered", "url": "../assets/img/quality/blue-paint.jpg" },
+  { "title": "We got this", "url": "../assets/img/quality/yellow-paint.jpg" },
+  { "title": "I did this", "url": "../assets/img/quality/orange-paint.jpg" },
+  { "title": "Green", "url": "../assets/img/quality/green-paint.jpg" }
 ];
